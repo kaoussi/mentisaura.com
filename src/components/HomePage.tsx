@@ -101,11 +101,11 @@ const HomePage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
             {/* Book Image */}
             <div className="relative group">
-              <div className="aspect-[5/8] rounded-2xl shadow-2xl overflow-hidden transform group-hover:scale-[1.02] transition-transform duration-300">
+              <div className="h-[70vh] max-h-[600px] rounded-2xl shadow-2xl overflow-hidden transform group-hover:scale-[1.02] transition-transform duration-300 mx-auto w-fit">
                 <img
                   src="/book.jpeg"
                   alt="The Contradicted Existence by Nassim El Hassouni"
-                  className="w-full h-full object-cover"
+                  className="h-full w-auto object-contain"
                 />
               </div>
               {/* Floating badge */}
