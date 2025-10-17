@@ -1,0 +1,287 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import '../styles/globals.css';
+import { FiFeather, FiGlobe, FiBookOpen, FiEye } from 'react-icons/fi';
+---
+
+<Layout
+  title="About Nassim El Hassouni - Author of The Contradicted Existence"
+  description="Philosopher examining existence without compromise. Founder of Mentis Aura. Author of The Contradicted Existence."
+>
+  <Navigation client:load />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-800 to-slate-900 text-white py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl mb-8 shadow-xl">
+          <FiFeather className="w-10 h-10 text-white" />
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 font-playfair">Nassim El Hassouni</h1>
+        <p class="text-2xl md:text-3xl text-slate-200 font-playfair italic mb-6">Philosopher. Founder of Mentis Aura.</p>
+        <div class="flex items-center justify-center gap-6 text-sm text-slate-300">
+          <div class="flex items-center gap-2">
+            <FiGlobe className="w-4 h-4" />
+            <span>Morocco-born</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <FiBookOpen className="w-4 h-4" />
+            <span>Author</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <FiEye className="w-4 h-4" />
+            <span>Peripheral Presence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <div class="prose prose-lg max-w-none text-gray-700 space-y-8">
+          <div>
+            <p class="text-xl leading-relaxed">
+              Nassim El Hassouni writes philosophy examining existence without compromise. His work synthesizes Western existentialism with Eastern mysticism to explore fundamental questions about human nature, consciousness, and the contradictions inherent in being.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">Background</h2>
+            <p>
+              Born in Morocco, educated across continents, El Hassouni brings a perspective shaped by multiple philosophical traditions. His approach combines rigorous analysis with mystical insight, examining selfishness, death anxiety, gender dynamics, free will, and consciousness through the lens of lived experience rather than abstract theorizing.
+            </p>
+            <p>
+              He founded Mentis Aura to publish philosophical work on its own terms, outside traditional publishing structures that require compromise for commercial viability.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-playfair text-center">Philosophical Influences</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border-2 border-blue-200 shadow-lg">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white text-sm">W</span>
+                  Western Tradition
+                </h3>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-blue-600 font-bold mt-1">•</span>
+                    <div><strong>Friedrich Nietzsche</strong> — Will to power, Übermensch</div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-blue-600 font-bold mt-1">•</span>
+                    <div><strong>Albert Camus</strong> — Absurdism, rebellion</div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-blue-600 font-bold mt-1">•</span>
+                    <div><strong>Baruch Spinoza</strong> — Unity, determinism</div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-blue-600 font-bold mt-1">•</span>
+                    <div><strong>Arthur Schopenhauer</strong> — Will, suffering</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl border-2 border-purple-200 shadow-lg">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white text-sm">E</span>
+                  Eastern Tradition
+                </h3>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-purple-600 font-bold mt-1">•</span>
+                    <div><strong>Ibn Arabi</strong> — Unity of being, mystical Islam</div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-purple-600 font-bold mt-1">•</span>
+                    <div><strong>Buddhism</strong> — Impermanence, non-self</div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-purple-600 font-bold mt-1">•</span>
+                    <div><strong>Taoism</strong> — Contradiction, natural order</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl border-2 border-green-200 shadow-lg">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white text-sm">C</span>
+                  Contemporary
+                </h3>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-green-600 font-bold mt-1">•</span>
+                    <div>Evolutionary psychology and biology</div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-green-600 font-bold mt-1">•</span>
+                    <div>Systems theory and emergence</div>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-green-600 font-bold mt-1">•</span>
+                    <div>Thermodynamics applied to life</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">Writing Philosophy</h2>
+            <p>
+              El Hassouni maintains that distance from audience is necessary for authentic philosophical inquiry. He writes in isolation, away from the noise of contemporary discourse, social media performance, and the pressure to build personal brand.
+            </p>
+            <blockquote class="border-l-4 border-gray-300 pl-6 italic text-xl text-gray-600 my-6">
+              "In shadows, thought moves freely."
+            </blockquote>
+            <p>
+              His work does not seek agreement or popularity. It examines what is, including elements most prefer to ignore: our capacity for evil, our selfishness, our mortality, our contradictions. The goal is honest examination, not comfortable consensus.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">Public Presence</h2>
+            <p>
+              El Hassouni operates peripherally to his work. The author believes philosophy speaks for itself, and that the moment the philosopher becomes more important than the philosophy, thought degrades into personality cult.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 my-8">
+              <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border-2 border-green-300 shadow-lg">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">✓</span>
+                  </div>
+                  <h3 class="font-bold text-gray-900 text-xl">What Exists</h3>
+                </div>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-green-600 font-bold mt-1">✓</span>
+                    <span>The books themselves</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-green-600 font-bold mt-1">✓</span>
+                    <span>Philosophical essays (published biweekly)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-green-600 font-bold mt-1">✓</span>
+                    <span>Rare appearances in high-value philosophical contexts</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl border-2 border-red-300 shadow-lg">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">✗</span>
+                  </div>
+                  <h3 class="font-bold text-gray-900 text-xl">What Doesn't Exist</h3>
+                </div>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 font-bold mt-1">✗</span>
+                    <span>Social media accounts</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 font-bold mt-1">✗</span>
+                    <span>Personal brand cultivation</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 font-bold mt-1">✗</span>
+                    <span>Interviews or podcasts (with rare exceptions)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 font-bold mt-1">✗</span>
+                    <span>Public events or speaking tours</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="font-semibold">
+              The work speaks. The thinker remains peripheral.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">On Mystique and Marketing</h2>
+            <p>
+              Some call this approach "mystique" or "marketing strategy." El Hassouni considers it philosophical necessity. The moment the philosopher becomes more important than the philosophy, thought degrades into personality cult.
+            </p>
+            <p>
+              Ideas deserve evaluation independent of their source's charisma, social media following, or public persona. The work either withstands scrutiny or it does not. Adding the author's face, life story, or daily thoughts adds nothing to philosophical validity—only noise.
+            </p>
+            <p>
+              This is not aloofness. This is clarity about what matters: the ideas themselves, examined rigorously, free from the distortions personality introduces.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-playfair text-center">Published Works</h2>
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-10 rounded-3xl shadow-2xl">
+              <h3 class="text-3xl font-bold text-white mb-4 font-playfair">The Contradicted Existence (2025)</h3>
+              <p class="mb-6 text-slate-200 text-lg">
+                Twenty-four philosophical essays examining selfishness, death, consciousness, gender dynamics, free will, and the fundamental contradictions of human existence. Second edition.
+              </p>
+              <a
+                href="/book"
+                class="group inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700 transition-all font-semibold text-lg shadow-xl hover:scale-105"
+              >
+                View Book Details
+                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+            <p class="mt-6 text-center text-gray-600 italic text-lg">
+              Additional titles forthcoming as the catalog develops. One to two works annually.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8 bg-slate-50 -mx-8 px-8 py-8 rounded-lg">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">For Readers</h2>
+            <p class="text-xl mb-4">
+              If you seek the author, you will find only the work.
+            </p>
+            <p class="text-xl mb-6">
+              If you seek the work, you will find everything you need.
+            </p>
+            <p>
+              The essays examine existence honestly. Whether you ultimately agree or disagree matters less than whether you examine these questions yourself with equal honesty.
+            </p>
+            <p class="font-semibold mb-0">
+              Read critically. Think independently. Reject what doesn't withstand your scrutiny.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Note -->
+        <div class="mt-16 bg-gradient-to-br from-amber-50 to-amber-100 p-10 rounded-3xl border-2 border-amber-200 shadow-xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-14 h-14 bg-amber-600 rounded-xl flex items-center justify-center">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Contact</h3>
+          <p class="text-gray-700 mb-6 text-center text-lg">
+            El Hassouni does not respond to personal correspondence, interview requests, or casual inquiries.
+          </p>
+          <p class="text-gray-700 text-center text-lg">
+            For matters related to his published work: <a href="mailto:contact@mentisaura.com" class="text-blue-600 font-semibold hover:underline">contact@mentisaura.com</a>
+          </p>
+          <p class="text-sm text-gray-500 mt-3 text-center italic">(Handled by Mentis Aura staff)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>

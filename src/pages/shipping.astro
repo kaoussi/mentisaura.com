@@ -1,0 +1,240 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import '../styles/globals.css';
+import { FiTruck } from 'react-icons/fi';
+---
+
+<Layout
+  title="Shipping & Returns - Mentis Aura"
+  description="Shipping and returns policy for Mentis Aura. Print-on-demand production timeline, shipping information, and refund policy."
+>
+  <Navigation client:load />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-800 to-slate-900 text-white py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl mb-8 shadow-xl">
+          <FiTruck className="w-10 h-10 text-white" />
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 font-playfair">Shipping & Returns</h1>
+        <p class="text-xl md:text-2xl text-slate-200">Print-on-demand production and delivery information</p>
+        <p class="text-slate-300 mt-4">Typically 7-14 days from order to delivery</p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-4xl mx-auto prose prose-lg prose-headings:font-playfair prose-headings:text-gray-900 prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline">
+
+        <h2>How Our Print-on-Demand System Works</h2>
+        <p>
+          When you order a physical book from Mentis Aura, we don't pull it from a warehouse. Instead, your book is printed fresh through our global production network. This ensures quality, eliminates waste, and allows fair pricing.
+        </p>
+
+        <h2>Production Timeline</h2>
+
+        <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+          <h3 class="mt-0">Step 1: Order Placed</h3>
+          <ul>
+            <li>You complete purchase</li>
+            <li>Order sent to production facility nearest your location</li>
+            <li>Confirmation email sent immediately</li>
+          </ul>
+
+          <h3>Step 2: Production (1-3 Business Days)</h3>
+          <ul>
+            <li>Book printed using premium materials</li>
+            <li>Professional binding and quality check</li>
+            <li>Packaged for shipping</li>
+          </ul>
+
+          <h3>Step 3: Shipping</h3>
+          <ul>
+            <li>Handed to carrier with tracking</li>
+            <li>Tracking information emailed to you</li>
+            <li>Standard delivery: 5-10 business days from ship date</li>
+          </ul>
+
+          <p class="font-bold">Total time from order to delivery: typically 7-14 business days</p>
+        </div>
+
+        <h2>Shipping Costs</h2>
+        <p>Calculated at checkout based on:</p>
+        <ul>
+          <li>Destination country</li>
+          <li>Book format (paperback or hardcover)</li>
+          <li>Shipping speed selected</li>
+        </ul>
+        <p><strong>Free shipping threshold:</strong> Orders $50+ (US only)</p>
+
+        <h2>International Shipping</h2>
+        <p>We ship worldwide through our global production network:</p>
+        <ul>
+          <li><strong>North America:</strong> 7-14 business days</li>
+          <li><strong>Europe:</strong> 7-14 business days</li>
+          <li><strong>Asia/Pacific:</strong> 10-21 business days</li>
+          <li><strong>Other Regions:</strong> 14-28 business days</li>
+        </ul>
+        <p class="text-red-600 font-semibold">International orders may be subject to customs duties/taxes (buyer responsibility).</p>
+
+        <h2>Tracking Your Order</h2>
+
+        <h3>Physical Books</h3>
+        <ul>
+          <li>Tracking number emailed when book ships</li>
+          <li>Track via carrier website</li>
+          <li>Contact us if tracking shows no movement for 7+ days</li>
+        </ul>
+
+        <h3>Ebooks</h3>
+        <ul>
+          <li>Download link sent immediately after payment</li>
+          <li>Check spam folder if not received within 5 minutes</li>
+          <li>Link valid 30 days (contact us if expired)</li>
+        </ul>
+
+        <h2>Delivery Issues</h2>
+
+        <h3>Lost Packages</h3>
+        <ul>
+          <li>Contact us if tracking shows delivered but you didn't receive</li>
+          <li>We'll investigate with carrier</li>
+          <li>Replacement sent if carrier confirms loss</li>
+        </ul>
+
+        <h3>Delayed Packages</h3>
+        <ul>
+          <li>Production delays: Contact us after 5 business days</li>
+          <li>Shipping delays: Carrier-dependent, typically customs or weather</li>
+          <li>We'll investigate and provide updates</li>
+        </ul>
+
+        <h3>Wrong Address</h3>
+        <ul>
+          <li>Verify address carefully before ordering</li>
+          <li>Contact us immediately if address wrong</li>
+          <li>Changes possible before production begins</li>
+          <li>Unable to change after production starts</li>
+        </ul>
+
+        <h2>Returns Policy</h2>
+
+        <div class="bg-red-50 p-6 rounded-lg border-2 border-red-200">
+          <h3 class="mt-0">All Sales Are Final</h3>
+          <p>Due to print-on-demand production (each book printed specifically for you), we cannot accept returns for:</p>
+          <ul>
+            <li>Content dissatisfaction</li>
+            <li>Philosophical disagreement</li>
+            <li>Change of mind</li>
+            <li>Duplicate orders</li>
+            <li>Wrong format selected</li>
+          </ul>
+
+          <p class="font-bold">Before purchasing:</p>
+          <ul>
+            <li>Read the sample chapter (coming soon)</li>
+            <li>Review complete chapter listing</li>
+            <li>Check format specifications</li>
+            <li>Consider which format suits your needs</li>
+          </ul>
+        </div>
+
+        <h2>Replacements for Defective Products</h2>
+        <p>We will replace at no cost if your book arrives:</p>
+
+        <h3>Physically Damaged</h3>
+        <ul>
+          <li>Pages torn, missing, or misprinted</li>
+          <li>Binding broken or defective</li>
+          <li>Cover damaged in transit</li>
+          <li>Water damage or severe wear</li>
+        </ul>
+
+        <h3>Production Defects</h3>
+        <ul>
+          <li>Significant printing errors</li>
+          <li>Incorrect book sent</li>
+          <li>Pages out of order</li>
+        </ul>
+
+        <h3>How to Request Replacement</h3>
+        <ol>
+          <li>Contact us within 30 days of delivery</li>
+          <li>Email photos showing defect</li>
+          <li>Include order number</li>
+          <li>We'll send replacement via expedited shipping</li>
+          <li>No need to return defective copy</li>
+        </ol>
+        <p>Email: <a href="mailto:support@mentisaura.com">support@mentisaura.com</a><br/>
+        Subject: "Defective Product - Order #[number]"</p>
+
+        <h2>Ebook Issues</h2>
+
+        <h3>Download Problems</h3>
+        <ul>
+          <li>Download link not received: Check spam, then contact us</li>
+          <li>File won't open: Ensure PDF reader installed</li>
+          <li>File corrupted: We'll send fresh download link</li>
+        </ul>
+
+        <h3>Format Issues</h3>
+        <ul>
+          <li>Ebook is PDF format only</li>
+          <li>Compatible with all standard PDF readers</li>
+          <li>If compatibility issues, contact us</li>
+        </ul>
+
+        <h3>No refunds for:</h3>
+        <ul>
+          <li>Device incompatibility (PDF is universal standard)</li>
+          <li>Personal preference for different format</li>
+          <li>Reading difficulty on specific device</li>
+        </ul>
+
+        <h2>Refunds</h2>
+
+        <h3>When We Issue Refunds</h3>
+        <ul>
+          <li>Defective product confirmed (refund or replacement, your choice)</li>
+          <li>Order never shipped due to our error</li>
+          <li>Charged incorrectly</li>
+        </ul>
+
+        <h3>When We Don't Issue Refunds</h3>
+        <ul>
+          <li>Content dissatisfaction</li>
+          <li>Philosophical disagreement</li>
+          <li>After reading the book</li>
+          <li>Changed mind</li>
+          <li>Ordered wrong format (your error)</li>
+          <li>Ordered duplicate copies</li>
+        </ul>
+
+        <h3>Refund Processing</h3>
+        <ul>
+          <li>Approved refunds processed within 5-7 business days</li>
+          <li>Funds return to original payment method</li>
+          <li>Contact your card issuer for posting timeframe</li>
+        </ul>
+
+        <h2>Questions or Issues</h2>
+        <p>Contact our support team:</p>
+        <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+          <p><strong>Email:</strong> <a href="mailto:support@mentisaura.com">support@mentisaura.com</a></p>
+          <p><strong>Response Time:</strong> 24-48 hours</p>
+          <p><strong>Include:</strong> Order number, detailed description, photos (if damaged)</p>
+        </div>
+        <p class="mt-4">We respond personally to every inquiry. No automated responses.</p>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>

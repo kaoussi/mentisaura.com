@@ -1,0 +1,485 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import '../styles/globals.css';
+---
+
+<Layout
+  title="The Contradicted Existence - Mentis Aura"
+  description="Twenty-four philosophical essays examining selfishness, consciousness, free will, death, love, and the fundamental contradictions of human existence."
+>
+  <Navigation client:load />
+
+  <main class="min-h-screen bg-white">
+    <!-- Hero Section - Enhanced Product Page Style -->
+    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+          <!-- Left: Book Image -->
+          <div class="relative">
+            <div class="sticky top-24">
+              <div class="aspect-[5/8] max-w-md mx-auto rounded-2xl shadow-2xl overflow-hidden">
+                <img
+                  src="/book.jpeg"
+                  alt="The Contradicted Existence by Nassim El Hassouni"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Badge -->
+              <div class="absolute -top-4 -right-4 bg-gradient-to-br from-yellow-400 to-orange-500 text-white px-6 py-3 rounded-full shadow-lg transform rotate-12">
+                <p class="font-bold text-sm">Second Edition</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Book Details -->
+          <div class="space-y-6">
+            <div>
+              <div class="inline-block px-3 py-1 bg-blue-500/20 backdrop-blur-sm text-blue-200 rounded-full text-sm font-semibold mb-4">
+                NOW AVAILABLE
+              </div>
+              <h1 class="text-5xl md:text-6xl font-bold mb-4 font-playfair">The Contradicted Existence</h1>
+              <p class="text-xl text-slate-300 mb-2">by Nassim El Hassouni</p>
+              <div class="flex items-center gap-4 text-slate-400 text-sm mb-6">
+                <span>Second Edition, 2025</span>
+                <span>•</span>
+                <span>24 Chapters</span>
+              </div>
+            </div>
+
+            <p class="text-xl text-slate-200 leading-relaxed">
+              Twenty-four philosophical essays examining the fundamental contradictions of human existence.
+            </p>
+
+            <p class="text-slate-300 leading-relaxed">
+              This work synthesizes Western existentialism—Nietzsche's will to power, Camus' absurdism, Spinoza's unity—with Eastern mysticism (Ibn Arabi, Buddhism) to explore selfishness, consciousness, free will, death, love, and power.
+            </p>
+
+            <!-- Format Selection Cards -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <h3 class="text-white font-bold text-lg mb-4">Choose Your Format</h3>
+              <div class="space-y-3">
+                <!-- Paperback -->
+                <div class="bg-white/5 hover:bg-white/10 border border-white/20 rounded-xl p-4 transition-all cursor-pointer">
+                  <div class="flex items-center justify-between">
+                    <div class="flex-1">
+                      <div class="flex items-center gap-3 mb-1">
+                        <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                        <h4 class="font-semibold text-white">Paperback</h4>
+                      </div>
+                      <p class="text-sm text-slate-300 ml-5">5" × 8" • Perfect bound • Matte finish</p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-2xl font-bold text-white">$19.99</p>
+                      <p class="text-xs text-slate-400">+ shipping</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ebook - Highlighted -->
+                <div class="bg-gradient-to-br from-blue-500/20 to-blue-600/20 border-2 border-blue-400/50 rounded-xl p-4 transition-all cursor-pointer">
+                  <div class="flex items-center justify-between">
+                    <div class="flex-1">
+                      <div class="flex items-center gap-3 mb-1">
+                        <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                        <h4 class="font-semibold text-white">Ebook (PDF)</h4>
+                        <span class="px-2 py-0.5 bg-blue-400 text-blue-900 text-xs font-bold rounded">INSTANT</span>
+                      </div>
+                      <p class="text-sm text-slate-200 ml-5">Instant download • All devices</p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-2xl font-bold text-blue-300">$9.99</p>
+                      <p class="text-xs text-slate-300">no shipping</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Hardcover -->
+                <div class="bg-white/5 hover:bg-white/10 border border-white/20 rounded-xl p-4 transition-all cursor-pointer">
+                  <div class="flex items-center justify-between">
+                    <div class="flex-1">
+                      <div class="flex items-center gap-3 mb-1">
+                        <div class="w-2 h-2 bg-amber-400 rounded-full"></div>
+                        <h4 class="font-semibold text-white">Hardcover</h4>
+                        <span class="px-2 py-0.5 bg-amber-400/20 text-amber-300 text-xs font-bold rounded">PREMIUM</span>
+                      </div>
+                      <p class="text-sm text-slate-300 ml-5">5.5" × 8.5" • Dust jacket • Premium binding</p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-2xl font-bold text-white">$33.00</p>
+                      <p class="text-xs text-slate-400">+ shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                <button
+                  disabled
+                  class="flex-1 px-6 py-3 bg-gray-600 text-gray-300 rounded-xl font-semibold cursor-not-allowed"
+                  title="Coming soon - pending author approval"
+                >
+                  Sample Chapter (Coming Soon)
+                </button>
+                <a
+                  href="#formats"
+                  class="flex-1 px-6 py-3 bg-white text-slate-900 rounded-xl font-semibold hover:bg-slate-100 transition-all text-center"
+                >
+                  View Purchase Options ↓
+                </a>
+              </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="flex flex-wrap gap-4 text-sm text-slate-300">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Secure payment via Stripe</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
+                </svg>
+                <span>Ships in 7-14 days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About This Work -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white border-b border-gray-200">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">About This Work</h2>
+        <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+          <p class="text-xl text-gray-800 leading-relaxed">
+            What remains when we strip away the illusions we hold about ourselves?
+          </p>
+          <p>
+            <em>The Contradicted Existence</em> examines this question through twenty-four essays that refuse to comfort or prescribe. This work explores fundamental contradictions: we are selfish yet unified with existence, determined yet experiencing free will, capable of both good and evil, isolated yet desperate for belonging.
+          </p>
+          <p>
+            The first section confronts selfishness directly—not whether we should be selfish, but acknowledging that we are, distinguishing between natural selfishness (conscious acceptance) and pathological selfishness (narcissistic denial).
+          </p>
+          <p>
+            Death appears not as something to overcome but as motivator. Sexual instinct is revealed as directing far more of our actions than we consciously acknowledge. Gender dynamics receive frank examination presenting complementary rather than identical roles—a perspective many readers will find controversial.
+          </p>
+          <p>
+            Consciousness and free will are explored through paradox: we experience free will within deterministic existence. The self we think we are—constructed from family labels, school grades, job titles, others' opinions—is revealed as image, not essence.
+          </p>
+          <p class="text-lg font-semibold text-gray-900 border-l-4 border-blue-500 pl-4">
+            This is not transformation literature. This is philosophical inquiry examining what is, not what we wish to be.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complete Chapter List -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4 font-playfair">Complete Chapter List</h2>
+          <p class="text-gray-600">24 philosophical essays examining the contradictions of existence</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            "You Are Selfish",
+            "You Are What You Do",
+            "You Are What You Love",
+            "You Want to Be Loved",
+            "We Fear Death",
+            "We Are Self-Destructive",
+            "Sexual Instinct Directs Our Actions",
+            "The Interdependence of Men and Women",
+            "The Unity of Existence",
+            "Existence is Contradicted",
+            "You Are Not the Center of the Universe",
+            "Free Will is Predestined",
+            "We Need a Belief System",
+            "Society Has a Massive Impact on You",
+            "Religious and Scientific Ideologies",
+            "The State Doesn't Exist",
+            "Heaven and Hell are Mental States",
+            "We Are All Capable of Good and Evil",
+            "The Need for Deep Sense of Belonging",
+            "Who You Are",
+            "Your Consciousness",
+            "You Can't Always Get What You Want",
+            "Courage, Love, and Humility: Pillars of Power",
+            "Everything Happens at the Right Time"
+          ].map((chapter, index) => (
+            <div class="group bg-white hover:bg-slate-50 p-4 rounded-xl shadow-sm border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-200">
+              <div class="flex items-start gap-3">
+                <span class="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-lg flex items-center justify-center text-sm font-bold">
+                  {index + 1}
+                </span>
+                <p class="text-gray-800 font-medium text-sm leading-snug pt-1 group-hover:text-blue-700 transition-colors">{chapter}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Who This Book Serves -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white border-y border-gray-200">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center font-playfair">Who This Book Serves</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- For You -->
+          <div class="relative bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border-2 border-green-200 shadow-lg">
+            <div class="absolute -top-4 left-8 bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold">
+              ✓ This Book Is For You
+            </div>
+            <ul class="space-y-4 mt-4 text-gray-800">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>You value honest inquiry over comfortable answers</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>You're tired of philosophy that avoids difficult questions</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>You can engage with ideas you may ultimately reject</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>You want substance over self-help platitudes</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>You're willing to examine uncomfortable truths</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Not For You -->
+          <div class="relative bg-gradient-to-br from-red-50 to-rose-50 p-8 rounded-2xl border-2 border-red-200 shadow-lg">
+            <div class="absolute -top-4 left-8 bg-red-500 text-white px-4 py-1 rounded-full text-sm font-bold">
+              ✗ This Book Is NOT For You
+            </div>
+            <ul class="space-y-4 mt-4 text-gray-800">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                </svg>
+                <span>You seek transformation or self-help</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                </svg>
+                <span>You want confirmation of existing beliefs</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                </svg>
+                <span>You're uncomfortable with controversial perspectives</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                </svg>
+                <span>You prefer easy, comforting philosophy</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                </svg>
+                <span>You can't distinguish engagement from endorsement</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Purchase Options - Professional Ecommerce Style -->
+    <section id="formats" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4 font-playfair">Choose Your Format</h2>
+          <p class="text-xl text-gray-600">Available in paperback, ebook, and premium hardcover</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Paperback -->
+          <div class="group relative bg-white rounded-2xl shadow-lg border-2 border-gray-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div class="p-8">
+              <div class="text-center mb-6">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
+                  <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Paperback</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">$19.99</p>
+                <p class="text-sm text-gray-500">+ shipping</p>
+              </div>
+
+              <ul class="space-y-3 mb-8 text-gray-700">
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">5" × 8" format</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">Perfect bound</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">Matte finish cover</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">Ships in 7-14 days</span>
+                </li>
+              </ul>
+
+              <button class="w-full bg-gray-900 text-white py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl">
+                Order Paperback
+              </button>
+            </div>
+          </div>
+
+          <!-- Ebook - Highlighted -->
+          <div class="group relative bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-2xl border-2 border-blue-400 transform scale-105 overflow-hidden">
+            <div class="absolute top-0 right-0 bg-yellow-400 text-blue-900 px-6 py-2 rounded-bl-2xl font-bold text-sm">
+              BEST VALUE
+            </div>
+            <div class="p-8 text-white">
+              <div class="text-center mb-6">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full mb-4">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ebook (PDF)</h3>
+                <p class="text-5xl font-bold mb-2">$9.99</p>
+                <p class="text-sm text-blue-100">Instant delivery</p>
+              </div>
+
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">PDF format</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">All devices compatible</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">Searchable text</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">Instant download</span>
+                </li>
+              </ul>
+
+              <button class="w-full bg-white text-blue-600 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl">
+                Purchase Ebook
+              </button>
+            </div>
+          </div>
+
+          <!-- Hardcover -->
+          <div class="group relative bg-white rounded-2xl shadow-lg border-2 border-gray-200 hover:border-amber-300 hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div class="p-8">
+              <div class="text-center mb-6">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
+                  <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Hardcover</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">$33.00</p>
+                <p class="text-sm text-gray-500">+ shipping</p>
+              </div>
+
+              <ul class="space-y-3 mb-8 text-gray-700">
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">5.5" × 8.5" format</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">Dust jacket included</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">Premium binding</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm">Ships in 7-14 days</span>
+                </li>
+              </ul>
+
+              <button class="w-full bg-gray-900 text-white py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl">
+                Order Hardcover
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-gray-600 mb-4">Need 10+ copies for a course or book club?</p>
+          <a href="/bulk-orders" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-lg">
+            <span>View Bulk Order Discounts</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>

@@ -1,0 +1,218 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import '../styles/globals.css';
+import { FiWind, FiShield, FiDollarSign, FiAward, FiUsers, FiTrendingUp } from 'react-icons/fi';
+---
+
+<Layout
+  title="About Mentis Aura - Philosophy Without Compromise"
+  description="The breeze of mind. Independent philosophical publishing without algorithms, committees, or compromise."
+>
+  <Navigation client:load />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-800 to-slate-900 text-white py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl mb-8 shadow-xl">
+          <FiWind className="w-10 h-10 text-white" />
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 font-playfair">About Mentis Aura</h1>
+        <p class="text-2xl md:text-3xl text-slate-200 font-playfair italic">The Breeze of Mind</p>
+        <div class="mt-8 flex items-center justify-center gap-8 text-sm text-slate-300">
+          <div class="flex items-center gap-2">
+            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+            <span>Philosophy Without Compromise</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+            <span>Direct-to-Reader</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <div class="prose prose-lg max-w-none text-gray-700 space-y-8">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">Mentis Aura. The Breeze of Mind.</h2>
+            <p>
+              Like wind carrying seeds across distances, ideas move most freely when unobstructed. Not forced through algorithms. Not filtered by committees seeking consensus. Not shaped to maximize engagement.
+            </p>
+            <p>
+              A breeze moves naturally, touching what it touches, leaving other things undisturbed. Some feel it immediately. Others notice only when leaves rustle. Some turn toward it. Others turn away.
+            </p>
+            <p>
+              This is how philosophy should travel—from thinker to reader, directly, naturally, without intermediaries dictating its path or softening its edge.
+            </p>
+            <p class="font-semibold text-gray-900 text-xl">
+              We are the breeze. The work is what it carries.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">Why Direct-to-Reader?</h2>
+            <p>
+              Traditional publishing requires compromise. Committees determine what's "marketable." Algorithms decide what readers see. The loudest voices drown out challenging thought.
+            </p>
+            <p>
+              When philosophical work must prove its commercial viability before publication, entire categories of inquiry disappear. Controversial perspectives get softened. Difficult ideas get simplified. Challenging readers becomes risky.
+            </p>
+            <p class="font-semibold">
+              Philosophy requires infrastructure equal to its ambition.
+            </p>
+            <p>
+              We built that infrastructure. Print-on-demand eliminates warehouse costs demanding bestseller velocity. Direct sales remove platform algorithms deciding who sees philosophical work. No editorial committees softening edges to broaden appeal.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-playfair text-center">What We Offer Readers</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="group bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-2 border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl mb-4 shadow-lg">
+                  <FiShield className="w-7 h-7 text-white" />
+                </div>
+                <h3 class="font-bold text-gray-900 mb-3 text-xl">No Compromise on Content</h3>
+                <p class="mb-0 text-gray-700">
+                  Books published as written. No editorial intervention to make ideas more palatable. No committee decisions about what's "too controversial."
+                </p>
+              </div>
+              <div class="group bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border-2 border-green-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl mb-4 shadow-lg">
+                  <FiDollarSign className="w-7 h-7 text-white" />
+                </div>
+                <h3 class="font-bold text-gray-900 mb-3 text-xl">Fair Pricing</h3>
+                <p class="mb-0 text-gray-700">
+                  No retail markup. No middlemen taking cuts. You pay for production, shipping, and the work itself. Nothing more.
+                </p>
+              </div>
+              <div class="group bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border-2 border-purple-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl mb-4 shadow-lg">
+                  <FiAward className="w-7 h-7 text-white" />
+                </div>
+                <h3 class="font-bold text-gray-900 mb-3 text-xl">Quality Production</h3>
+                <p class="mb-0 text-gray-700">
+                  Each book printed fresh when ordered. Premium materials. Professional binding. Books meant to last, not disposable products.
+                </p>
+              </div>
+              <div class="group bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl border-2 border-orange-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl mb-4 shadow-lg">
+                  <FiUsers className="w-7 h-7 text-white" />
+                </div>
+                <h3 class="font-bold text-gray-900 mb-3 text-xl">Direct Support for Philosophy</h3>
+                <p class="mb-0 text-gray-700">
+                  Your purchase directly funds philosophical work. No corporate shareholders. No conglomerate profits. Just ideas and the infrastructure supporting them.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">No Committees, No Algorithms</h2>
+            <p>
+              You won't find our books trending on social media. Algorithms don't promote challenging philosophy. Committees don't greenlight controversial inquiry. The marketplace doesn't reward difficulty.
+            </p>
+            <p>
+              We're fine with that.
+            </p>
+            <p>
+              This work reaches those who seek it. Readers tired of philosophy that tip-toes around uncomfortable truths. People valuing substance over sensation. Those willing to engage seriously with ideas they may ultimately reject.
+            </p>
+            <p class="font-semibold">
+              Small audience, serious engagement. Better than large audience, shallow consumption.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">Building for Decades, Not Quarters</h2>
+            <p>
+              Traditional publishers think in quarters. We think in decades.
+            </p>
+            <p>
+              A catalog of serious philosophical work takes time to build. Each book requires years of thought, not months of production. Readers discover difficult philosophy slowly, through word-of-mouth and serious engagement, not viral marketing.
+            </p>
+            <p>
+              We're patient. Philosophy has always moved at its own pace.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">What We're Not</h2>
+            <p>
+              <strong>We're not self-help.</strong> If you seek transformation, comfort, or easy answers, look elsewhere.
+            </p>
+            <p>
+              <strong>We're not academic press.</strong> No peer review. No institutional gatekeeping. Just ideas standing on their own merit.
+            </p>
+            <p>
+              <strong>We're not building community.</strong> No social media presence. No follower counts. No personality cult around authors. The work speaks or it doesn't.
+            </p>
+            <p>
+              <strong>We're not marketers.</strong> We describe what we publish honestly. If you disagree with the philosophy, that's fine. Better you know before purchasing than feel misled after.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-8 bg-slate-50 -mx-8 px-8 py-8 rounded-lg">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 font-playfair">The Work We Publish</h2>
+            <p>
+              Currently: <em>The Contradicted Existence</em> by Nassim El Hassouni. Twenty-four philosophical essays examining selfishness, consciousness, free will, death, love, and the fundamental contradictions of human existence.
+            </p>
+            <p>
+              Future: Additional philosophical works as they're ready. One to two titles annually. No rush. No compromise.
+            </p>
+            <p class="mb-0">
+              Each work must meet one standard: Does it examine existence honestly, without softening difficult truths for commercial appeal?
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-16 bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-12 text-center shadow-2xl">
+          <h3 class="text-3xl font-bold text-white mb-4 font-playfair">Explore Our Work</h3>
+          <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+            Ready to engage with philosophy without compromise? Start with our first publication.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/book"
+              class="group inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700 transition-all font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105"
+            >
+              View The Contradicted Existence
+              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+            <a
+              href="/contact"
+              class="inline-block bg-white text-gray-900 px-8 py-4 rounded-xl hover:bg-gray-100 transition-all font-semibold text-lg shadow-lg"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Statement -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-800 to-slate-900 text-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-2xl font-playfair italic mb-4">
+          "In shadows, thought moves freely."
+        </p>
+        <p class="text-slate-300">
+          Where thought moves freely. Philosophy without compromise.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>

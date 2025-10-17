@@ -1,0 +1,224 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import '../styles/globals.css';
+import { FiMail, FiPackage, FiUsers, FiMic, FiMapPin, FiAlertTriangle } from 'react-icons/fi';
+---
+
+<Layout
+  title="Contact Mentis Aura - Philosophy Without Compromise"
+  description="Contact Mentis Aura for general inquiries, order support, bulk orders, or media requests."
+>
+  <Navigation client:load />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-800 to-slate-900 text-white py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl mb-8 shadow-xl">
+          <FiMail className="w-10 h-10 text-white" />
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 font-playfair">Contact Us</h1>
+        <p class="text-xl md:text-2xl text-slate-200">We respond personally to all legitimate inquiries within 24-48 hours.</p>
+        <div class="mt-8 inline-flex items-center gap-2 bg-blue-900/30 px-6 py-3 rounded-full border border-blue-400/30">
+          <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+          <span class="text-sm text-slate-200">Available via email</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- General Inquiries -->
+          <div class="group bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-2 border-blue-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+              <FiMail className="w-7 h-7 text-white" />
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 font-playfair">General Inquiries</h2>
+            <p class="text-gray-700 mb-6">
+              For questions about book content, philosophy, Mentis Aura's publishing approach, or general information.
+            </p>
+            <div class="bg-white p-6 rounded-xl border-2 border-blue-300 shadow-md">
+              <p class="font-semibold text-gray-900 mb-2 text-sm uppercase tracking-wide">Email:</p>
+              <a href="mailto:contact@mentisaura.com" class="text-blue-600 hover:text-blue-700 text-lg font-semibold hover:underline">
+                contact@mentisaura.com
+              </a>
+            </div>
+            <div class="mt-4 flex items-center gap-2 text-sm text-gray-600">
+              <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span>Response time: 24-48 hours</span>
+            </div>
+          </div>
+
+          <!-- Order Support -->
+          <div class="group bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border-2 border-green-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+              <FiPackage className="w-7 h-7 text-white" />
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 font-playfair">Order Support</h2>
+            <p class="text-gray-700 mb-6">
+              For assistance with order status, shipping questions, technical issues, damaged products, or payment concerns.
+            </p>
+            <div class="bg-white p-6 rounded-xl border-2 border-green-300 shadow-md">
+              <p class="font-semibold text-gray-900 mb-2 text-sm uppercase tracking-wide">Email:</p>
+              <a href="mailto:support@mentisaura.com" class="text-green-600 hover:text-green-700 text-lg font-semibold hover:underline">
+                support@mentisaura.com
+              </a>
+            </div>
+            <div class="mt-4 space-y-1">
+              <div class="flex items-center gap-2 text-sm text-gray-600">
+                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                <span>Response time: 24-48 hours</span>
+              </div>
+              <p class="text-sm text-gray-600 ml-4">Include your order number for fastest response</p>
+            </div>
+          </div>
+
+          <!-- Bulk Orders -->
+          <div class="group bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border-2 border-purple-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+              <FiUsers className="w-7 h-7 text-white" />
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 font-playfair">Bulk Orders</h2>
+            <p class="text-gray-700 mb-6">
+              For university courses, book clubs, reading groups, or organizational purchases (10+ copies).
+            </p>
+            <div class="bg-white p-6 rounded-xl border-2 border-purple-300 shadow-md">
+              <p class="font-semibold text-gray-900 mb-2 text-sm uppercase tracking-wide">Email:</p>
+              <a href="mailto:bulk@mentisaura.com" class="text-purple-600 hover:text-purple-700 text-lg font-semibold hover:underline">
+                bulk@mentisaura.com
+              </a>
+            </div>
+            <div class="mt-4 bg-purple-100 rounded-lg p-3 border border-purple-200">
+              <p class="text-sm text-gray-700 font-medium">Volume discounts & customized invoicing available</p>
+            </div>
+          </div>
+
+          <!-- Media & Press -->
+          <div class="group bg-gradient-to-br from-amber-50 to-amber-100 p-8 rounded-2xl border-2 border-amber-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+              <FiMic className="w-7 h-7 text-white" />
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 font-playfair">Media & Press</h2>
+            <p class="text-gray-700 mb-6">
+              For review copy requests, interview inquiries, press coverage, or podcast appearances.
+            </p>
+            <div class="bg-white p-6 rounded-xl border-2 border-amber-300 shadow-md">
+              <p class="font-semibold text-gray-900 mb-2 text-sm uppercase tracking-wide">Email:</p>
+              <a href="mailto:press@mentisaura.com" class="text-amber-600 hover:text-amber-700 text-lg font-semibold hover:underline">
+                press@mentisaura.com
+              </a>
+            </div>
+            <div class="mt-4 bg-red-100 rounded-lg p-3 border-2 border-red-200">
+              <p class="text-sm text-red-700 font-semibold">⚠️ Author maintains minimal public presence. Most interview requests are declined.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Important Notes -->
+        <div class="mt-16 bg-gradient-to-br from-yellow-50 to-yellow-100 border-2 border-yellow-300 rounded-2xl p-10 shadow-lg">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 bg-yellow-600 rounded-xl flex items-center justify-center shadow-md">
+              <FiAlertTriangle className="w-6 h-6 text-white" />
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 font-playfair">Important Notes</h3>
+          </div>
+          <div class="space-y-4 text-gray-700">
+            <div class="bg-white/70 p-5 rounded-xl border border-yellow-200">
+              <p class="font-bold text-gray-900 mb-2">Author Personal Messages</p>
+              <p>The author does not respond to personal emails, mentorship requests, or casual correspondence. All communication is handled by Mentis Aura staff.</p>
+            </div>
+            <div class="bg-white/70 p-5 rounded-xl border border-yellow-200">
+              <p class="font-bold text-gray-900 mb-2">Social Media</p>
+              <p>We do not maintain social media accounts for customer service or inquiries. Email only.</p>
+            </div>
+            <div class="bg-white/70 p-5 rounded-xl border border-yellow-200">
+              <p class="font-bold text-gray-900 mb-2">Privacy</p>
+              <p>Your contact information is used solely to answer your question and is not added to mailing lists without explicit consent. See our <a href="/privacy" class="text-blue-600 hover:underline font-semibold">Privacy Policy</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Address -->
+        <div class="mt-16">
+          <h3 class="text-3xl font-bold text-gray-900 mb-8 font-playfair text-center">Physical Address</h3>
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-10 rounded-3xl shadow-2xl max-w-xl mx-auto">
+            <div class="flex items-center justify-center mb-6">
+              <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                <FiMapPin className="w-7 h-7 text-white" />
+              </div>
+            </div>
+            <div class="text-center text-white space-y-2">
+              <p class="font-bold text-xl mb-4">Mentis Aura LLC</p>
+              <p class="text-slate-200">30 N Gould St Ste R</p>
+              <p class="text-slate-200">Sheridan, WY 82801</p>
+              <p class="text-slate-200">United States</p>
+              <p class="text-slate-200 mt-4 text-lg font-semibold">+1 251 384 3909</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500 mt-6 text-center max-w-2xl mx-auto italic">
+            For legal/business correspondence only. Books ship from global production facilities, not this address.
+          </p>
+        </div>
+
+        <!-- What We Don't Handle -->
+        <div class="mt-16 bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-300 rounded-2xl p-10 shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 font-playfair text-center">What We Don't Handle</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-white/70 p-5 rounded-xl border border-red-200 flex items-start gap-3">
+              <span class="text-red-600 text-2xl font-bold">✗</span>
+              <div>
+                <p class="font-bold text-gray-900 mb-1">Author Personal Messages</p>
+                <p class="text-sm text-gray-700">No personal emails, mentorship, or casual correspondence</p>
+              </div>
+            </div>
+            <div class="bg-white/70 p-5 rounded-xl border border-red-200 flex items-start gap-3">
+              <span class="text-red-600 text-2xl font-bold">✗</span>
+              <div>
+                <p class="font-bold text-gray-900 mb-1">Social Media</p>
+                <p class="text-sm text-gray-700">No Twitter, Instagram, Facebook, or other platforms</p>
+              </div>
+            </div>
+            <div class="bg-white/70 p-5 rounded-xl border border-red-200 flex items-start gap-3">
+              <span class="text-red-600 text-2xl font-bold">✗</span>
+              <div>
+                <p class="font-bold text-gray-900 mb-1">Content Requests</p>
+                <p class="text-sm text-gray-700">No unsolicited manuscript submissions or publishing proposals</p>
+              </div>
+            </div>
+            <div class="bg-white/70 p-5 rounded-xl border border-red-200 flex items-start gap-3">
+              <span class="text-red-600 text-2xl font-bold">✗</span>
+              <div>
+                <p class="font-bold text-gray-900 mb-1">Phone Support</p>
+                <p class="text-sm text-gray-700">Email only - we don't offer phone support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Link -->
+        <div class="mt-16 bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-12 text-center shadow-2xl">
+          <h3 class="text-3xl font-bold text-white mb-4 font-playfair">Need Quick Answers?</h3>
+          <p class="text-slate-200 text-lg mb-8">Many questions are already answered in our FAQ</p>
+          <a
+            href="/faq"
+            class="group inline-flex items-center justify-center bg-blue-600 text-white px-10 py-4 rounded-xl hover:bg-blue-700 transition-all font-semibold text-lg shadow-xl hover:scale-105"
+          >
+            View Frequently Asked Questions
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>

@@ -1,0 +1,217 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import '../styles/globals.css';
+import { FiFileText } from 'react-icons/fi';
+---
+
+<Layout
+  title="Terms & Conditions - Mentis Aura"
+  description="Terms and conditions for purchasing from Mentis Aura. Purchase terms, refund policy, and legal agreements."
+>
+  <Navigation client:load />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-800 to-slate-900 text-white py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl mb-8 shadow-xl">
+          <FiFileText className="w-10 h-10 text-white" />
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 font-playfair">Terms & Conditions</h1>
+        <p class="text-xl md:text-2xl text-slate-200">Last Updated: January 2025</p>
+        <p class="text-slate-300 mt-4">Purchase terms and legal agreements</p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-4xl mx-auto prose prose-lg prose-headings:font-playfair prose-headings:text-gray-900 prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline">
+
+        <h2>Agreement to Terms</h2>
+        <p>
+          By accessing mentisaura.com or purchasing products, you agree to these Terms & Conditions. If you disagree, do not use this website or purchase our products.
+        </p>
+
+        <h2>Products and Pricing</h2>
+
+        <h3>Available Products</h3>
+        <ul>
+          <li>Physical books (paperback, hardcover)</li>
+          <li>Digital books (ebook/PDF format)</li>
+          <li>Prices displayed in USD</li>
+          <li>Prices subject to change without notice</li>
+        </ul>
+
+        <h3>Product Descriptions</h3>
+        <ul>
+          <li>We make reasonable efforts to accurately describe products</li>
+          <li>Print-on-demand means each book is freshly printed when ordered</li>
+          <li>Minor variations in printing may occur</li>
+          <li>Ebook formatting optimized for standard PDF readers</li>
+        </ul>
+
+        <h2>Ordering and Payment</h2>
+
+        <h3>Payment Processing</h3>
+        <ul>
+          <li>All payments processed through Stripe, Inc.</li>
+          <li>We accept major credit and debit cards</li>
+          <li>Payment required at time of order</li>
+          <li>All sales final (see Refund Policy below)</li>
+        </ul>
+
+        <h3>Order Acceptance</h3>
+        <ul>
+          <li>Orders subject to acceptance</li>
+          <li>We reserve right to refuse or cancel orders</li>
+          <li>Reasons include: pricing errors, product unavailability, suspected fraud</li>
+        </ul>
+
+        <h2>Shipping and Delivery</h2>
+
+        <h3>Physical Books</h3>
+        <ul>
+          <li>Printed on demand: 1-3 days production time</li>
+          <li>Shipping: 5-10 business days (standard)</li>
+          <li>International shipping times vary by location</li>
+          <li>Risk of loss passes to you upon delivery to carrier</li>
+        </ul>
+
+        <h3>Ebooks</h3>
+        <ul>
+          <li>Instant delivery via email after payment confirmation</li>
+          <li>Download link valid for 30 days (contact us if expired)</li>
+          <li>No shipping charges</li>
+        </ul>
+
+        <p>See detailed <a href="/shipping">Shipping & Returns Policy</a> for complete information.</p>
+
+        <h2>Refunds and Returns</h2>
+
+        <div class="bg-red-50 p-6 rounded-lg border-2 border-red-200">
+          <h3 class="mt-0">No Returns Policy</h3>
+          <ul>
+            <li>All sales are final</li>
+            <li>Books cannot be returned due to content dissatisfaction</li>
+            <li>No refunds for philosophical disagreement with ideas presented</li>
+            <li>Sample chapter and full description provided before purchase</li>
+          </ul>
+        </div>
+
+        <h3>Exceptions (Defective Products Only)</h3>
+        <ul>
+          <li>Damaged physical books: Contact us within 30 days with photos</li>
+          <li>Defective ebooks: Contact us for replacement file</li>
+          <li>We provide refund or replacement at our discretion</li>
+        </ul>
+
+        <p>See detailed <a href="/shipping">Shipping & Returns Policy</a>.</p>
+
+        <h2>Intellectual Property</h2>
+
+        <h3>Copyrighted Material</h3>
+        <ul>
+          <li>All book content copyright © 2024, 2025 Nassim El Hassouni</li>
+          <li>All website content copyright © Mentis Aura LLC</li>
+          <li>Ebook purchase grants personal, non-transferable reading license</li>
+        </ul>
+
+        <h3>Prohibited Uses</h3>
+        <ul>
+          <li>Reproducing or distributing book content without permission</li>
+          <li>Reselling ebooks or sharing download links</li>
+          <li>Creating derivative works without authorization</li>
+          <li>Commercial use of any content without license</li>
+        </ul>
+
+        <h2>Digital Products Terms</h2>
+
+        <h3>Ebook License</h3>
+        <ul>
+          <li>Personal, non-commercial use only</li>
+          <li>No DRM, but copyright protected</li>
+          <li>May download to personal devices</li>
+          <li>May not share, resell, or distribute</li>
+          <li>License terminates upon violation</li>
+        </ul>
+
+        <h2>Website Use</h2>
+
+        <h3>Acceptable Use</h3>
+        <ul>
+          <li>Access website for lawful purposes only</li>
+          <li>Do not attempt to breach security</li>
+          <li>Do not scrape or harvest data</li>
+          <li>Do not interfere with website operation</li>
+        </ul>
+
+        <h3>We Reserve Right To</h3>
+        <ul>
+          <li>Modify or discontinue website without notice</li>
+          <li>Block access for terms violations</li>
+          <li>Remove content at our discretion</li>
+        </ul>
+
+        <h2>Disclaimers</h2>
+
+        <div class="bg-yellow-50 p-6 rounded-lg border-2 border-yellow-200">
+          <h3 class="mt-0">As-Is Basis</h3>
+          <ul>
+            <li>Products sold "as is" without warranties</li>
+            <li>No guarantee of specific outcomes from reading</li>
+            <li>Philosophical content may be challenging or disagreeable</li>
+            <li>Not a substitute for professional mental health care</li>
+          </ul>
+        </div>
+
+        <h3>No Warranties</h3>
+        <ul>
+          <li>We disclaim all warranties, express or implied</li>
+          <li>Including merchantability, fitness for particular purpose</li>
+          <li>No warranty of uninterrupted website access</li>
+        </ul>
+
+        <h2>Limitation of Liability</h2>
+        <p>To maximum extent permitted by law:</p>
+        <ul>
+          <li>Mentis Aura LLC not liable for indirect, incidental, special, or consequential damages</li>
+          <li>Total liability limited to amount paid for product</li>
+          <li>Not liable for third-party service failures (Stripe, Lulu, shipping)</li>
+          <li>Not liable for content disagreement or emotional responses to material</li>
+        </ul>
+
+        <h2>Governing Law</h2>
+        <ul>
+          <li>These terms governed by laws of Wyoming, United States</li>
+          <li>Disputes resolved in courts of Wyoming jurisdiction</li>
+          <li>If provision unenforceable, remainder remains valid</li>
+        </ul>
+
+        <h2>Changes to Terms</h2>
+        <ul>
+          <li>We may modify terms at any time</li>
+          <li>Changes effective when posted</li>
+          <li>Continued use constitutes acceptance</li>
+          <li>Check terms periodically for updates</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>Questions about these terms: <a href="mailto:legal@mentisaura.com">legal@mentisaura.com</a></p>
+        <p>General inquiries: <a href="mailto:contact@mentisaura.com">contact@mentisaura.com</a></p>
+
+        <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 mt-8">
+          <p class="font-bold mb-2">Mentis Aura LLC</p>
+          <p>30 N Gould St Ste R<br/>Sheridan, WY 82801<br/>United States</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>

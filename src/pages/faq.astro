@@ -1,0 +1,366 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import '../styles/globals.css';
+import { FiHelpCircle, FiBook, FiShoppingCart, FiTruck, FiRefreshCw, FiInfo, FiUser, FiSettings } from 'react-icons/fi';
+---
+
+<Layout
+  title="FAQ - Frequently Asked Questions - Mentis Aura"
+  description="Common questions about The Contradicted Existence, ordering, shipping, formats, and Mentis Aura's publishing approach."
+>
+  <Navigation client:load />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-800 to-slate-900 text-white py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl mb-8 shadow-xl">
+          <FiHelpCircle className="w-10 h-10 text-white" />
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 font-playfair">Frequently Asked Questions</h1>
+        <p class="text-xl md:text-2xl text-slate-200">Common questions about our book, ordering, and philosophy.</p>
+      </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-4xl mx-auto">
+
+        <!-- About The Book -->
+        <div class="mb-16">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg">
+              <FiBook className="w-6 h-6 text-white" />
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 font-playfair">About The Book</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border-2 border-blue-200 shadow-md">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <span class="text-blue-600">Q:</span> What is <em>The Contradicted Existence</em> about?
+              </h3>
+              <p class="text-gray-700 pl-6">
+                Twenty-four philosophical essays examining the fundamental contradictions of human existence. It synthesizes Western existentialism (Nietzsche, Camus, Spinoza) with Eastern mysticism (Ibn Arabi, Buddhism) to explore selfishness, consciousness, free will, death, love, and power. This is not self-help or transformation literature—it's philosophical inquiry examining what is, not what we wish to be.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border-2 border-blue-200 shadow-md">
+              <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <span class="text-blue-600">Q:</span> Is this book for me?
+              </h3>
+              <div class="text-gray-700 space-y-4 pl-6">
+                <div class="bg-green-50 p-4 rounded-xl border border-green-200">
+                  <p class="font-bold text-green-900 mb-2">✓ This book is for you if:</p>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• You value honest inquiry over comfortable answers</li>
+                    <li>• You're tired of philosophy that avoids difficult questions</li>
+                    <li>• You can engage with ideas you may ultimately reject</li>
+                    <li>• You want substance over self-help platitudes</li>
+                  </ul>
+                </div>
+                <div class="bg-red-50 p-4 rounded-xl border border-red-200">
+                  <p class="font-bold text-red-900 mb-2">✗ This book is NOT for you if:</p>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• You seek transformation or self-help</li>
+                    <li>• You want confirmation of existing beliefs</li>
+                    <li>• You're uncomfortable with controversial perspectives</li>
+                    <li>• You can't distinguish engagement from endorsement</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-2xl border-2 border-amber-200 shadow-md">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <span class="text-amber-600">Q:</span> I heard Chapter 8 is controversial. What's in it?
+              </h3>
+              <p class="text-gray-700 pl-6">
+                Chapter 8 ("The Interdependence of Men and Women") examines gender dynamics through the lens of complementary rather than identical roles—a perspective outside contemporary consensus. Many readers will disagree with it. The work does not seek agreement; it examines a viewpoint honestly. Read critically. Reject what doesn't withstand your scrutiny.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border-2 border-blue-200 shadow-md">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <span class="text-blue-600">Q:</span> Can I read a sample before purchasing?
+              </h3>
+              <p class="text-gray-700 pl-6">
+                Sample chapter (Chapter 1: "You Are Selfish") is coming soon, pending author approval. It will be available free as a PDF download.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ordering & Formats -->
+        <div class="mb-16">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl shadow-lg">
+              <FiShoppingCart className="w-6 h-6 text-white" />
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 font-playfair">Ordering & Formats</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">What formats are available?</h3>
+              <div class="text-gray-700">
+                <ul class="space-y-2">
+                  <li><strong>Paperback:</strong> $19.99 • 5" × 8" • Perfect bound • Matte finish</li>
+                  <li><strong>Ebook (PDF):</strong> $9.99 • Instant download • All devices • Searchable</li>
+                  <li><strong>Hardcover:</strong> $33.00 • 5.5" × 8.5" • Dust jacket • Premium binding</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Which format should I choose?</h3>
+              <div class="text-gray-700 space-y-2">
+                <p><strong>Paperback:</strong> Best balance of affordability and physical book experience. Portable, durable.</p>
+                <p><strong>Ebook:</strong> Instant access, searchable, lowest price. Good for trying the work before committing to physical.</p>
+                <p><strong>Hardcover:</strong> Premium quality for collectors or those who value lasting physical books.</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">How do I order?</h3>
+              <p class="text-gray-700">
+                Visit the <a href="/book" class="text-blue-600 hover:underline">book page</a> and click your preferred format. All orders processed securely through Stripe. We never see your card details.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Do you offer bulk discounts?</h3>
+              <p class="text-gray-700">
+                Yes! For orders of 10+ copies (universities, book clubs, organizations), we offer volume discounts and customized invoicing. Contact <a href="mailto:bulk@mentisaura.com" class="text-blue-600 hover:underline">bulk@mentisaura.com</a> for pricing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shipping & Delivery -->
+        <div class="mb-16">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl shadow-lg">
+              <FiTruck className="w-6 h-6 text-white" />
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 font-playfair">Shipping & Delivery</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">How does print-on-demand work?</h3>
+              <p class="text-gray-700">
+                When you order a physical book, it's printed fresh specifically for you through our global production network. This ensures quality, eliminates waste, and allows fair pricing. Timeline: 1-3 days production + 5-10 days shipping = typically 7-14 days total from order to delivery.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">How long until I receive my order?</h3>
+              <div class="text-gray-700 space-y-2">
+                <p><strong>Physical books:</strong> 7-14 business days (1-3 days production + 5-10 days shipping)</p>
+                <p><strong>Ebooks:</strong> Instant delivery via email after payment confirmation</p>
+                <p><strong>International orders:</strong> 10-21 business days depending on location</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Do you ship internationally?</h3>
+              <p class="text-gray-700">
+                Yes! We ship worldwide through our global production network. Shipping times vary by location (see above). International orders may be subject to customs duties/taxes (buyer responsibility).
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">How do I track my order?</h3>
+              <p class="text-gray-700">
+                You'll receive a tracking number via email when your book ships. If tracking shows no movement for 7+ days, contact <a href="mailto:support@mentisaura.com" class="text-blue-600 hover:underline">support@mentisaura.com</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Returns & Refunds -->
+        <div class="mb-16">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl shadow-lg">
+              <FiRefreshCw className="w-6 h-6 text-white" />
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 font-playfair">Returns & Refunds</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Can I return the book if I don't like it?</h3>
+              <p class="text-gray-700 font-semibold text-red-700">
+                No. All sales are final.
+              </p>
+              <p class="text-gray-700 mt-2">
+                Due to print-on-demand (each book printed specifically for you), we cannot accept returns for content dissatisfaction, philosophical disagreement, change of mind, or duplicate orders. Before purchasing: read the sample chapter, review the complete chapter list, and understand the book's philosophical approach.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">What if my book arrives damaged?</h3>
+              <p class="text-gray-700">
+                We will replace defective products at no cost. Contact <a href="mailto:support@mentisaura.com" class="text-blue-600 hover:underline">support@mentisaura.com</a> within 30 days with photos of the damage. We'll send a replacement via expedited shipping.
+              </p>
+              <p class="text-gray-700 mt-2">
+                Defects we replace: damaged/torn/missing pages, broken binding, significant printing errors, severe transit damage.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">What about ebook refunds?</h3>
+              <p class="text-gray-700">
+                Ebook purchases are final once downloaded. We cannot "take back" digital content. No refunds for content dissatisfaction, device compatibility (PDF is universal), or changed mind.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Mentis Aura -->
+        <div class="mb-16">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl shadow-lg">
+              <FiInfo className="w-6 h-6 text-white" />
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 font-playfair">About Mentis Aura</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">What does "Mentis Aura" mean?</h3>
+              <p class="text-gray-700">
+                Mentis Aura means "The Breeze of Mind." Like wind carrying seeds across distances, ideas move most freely when unobstructed—not forced through algorithms, not filtered by committees, not shaped for commercial appeal. We are the breeze. The work is what it carries.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Why publish independently instead of traditional publishing?</h3>
+              <p class="text-gray-700">
+                Traditional publishing requires compromise. Committees determine what's "marketable." Algorithms decide what readers see. Editorial intervention softens edges. We built infrastructure to bypass these filters—print-on-demand eliminates warehouse costs, direct sales remove platform algorithms, no committees soften content. Philosophy requires infrastructure equal to its ambition.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Will there be more books?</h3>
+              <p class="text-gray-700">
+                Yes. Additional philosophical works will be published as the catalog develops. Expect 1-2 new titles annually. We build for decades, not quarters. Each work requires years of thought, not months of production.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- About The Author -->
+        <div class="mb-16">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl shadow-lg">
+              <FiUser className="w-6 h-6 text-white" />
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 font-playfair">About The Author</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Who is Nassim El Hassouni?</h3>
+              <p class="text-gray-700">
+                Philosopher and founder of Mentis Aura. Born in Morocco, educated across continents, he writes philosophy examining existence without compromise. His work synthesizes Western existentialism with Eastern mysticism. He maintains minimal public presence, believing distance from audience enables authentic inquiry. See the <a href="/about-author" class="text-blue-600 hover:underline">full author bio</a>.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Does the author have social media?</h3>
+              <p class="text-gray-700">
+                No. The author maintains no social media presence. No Twitter, Instagram, Facebook, or other platforms. The work speaks; the thinker remains peripheral.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Can I contact the author directly?</h3>
+              <p class="text-gray-700">
+                No. The author does not respond to personal correspondence, interview requests, or casual inquiries. All communication is handled by Mentis Aura staff via <a href="mailto:contact@mentisaura.com" class="text-blue-600 hover:underline">contact@mentisaura.com</a>.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Will the author do interviews or podcasts?</h3>
+              <p class="text-gray-700">
+                Rarely. The author grants few interviews, focusing on ideas rather than personality. Most interview requests are declined. Criteria for consideration: established philosophical publications/podcasts, audience genuinely interested in serious inquiry, focus on ideas not personal narrative. Contact <a href="mailto:press@mentisaura.com" class="text-blue-600 hover:underline">press@mentisaura.com</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Questions -->
+        <div class="mb-16">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl shadow-lg">
+              <FiSettings className="w-6 h-6 text-white" />
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 font-playfair">Technical Questions</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">What ebook format do you use?</h3>
+              <p class="text-gray-700">
+                PDF format, compatible with all standard PDF readers on all devices (computers, tablets, phones, e-readers). The PDF is searchable and allows adjustable display size on most devices.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Is there an audiobook version?</h3>
+              <p class="text-gray-700">
+                Not currently. Audiobook edition is under consideration for future release.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Is my payment information secure?</h3>
+              <p class="text-gray-700">
+                Yes. All payments processed through Stripe, one of the world's most secure payment platforms (PCI Level 1 certified). Your card information is encrypted end-to-end, never touches our servers, and is never stored by Mentis Aura.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Do you store my personal data?</h3>
+              <p class="text-gray-700">
+                We collect only what's necessary: email (order confirmation), shipping address (physical books only), name (shipping). We never sell your data, share with advertisers, or track you across websites. See our <a href="/privacy" class="text-blue-600 hover:underline">Privacy Policy</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Still Have Questions? -->
+        <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-12 rounded-3xl text-center shadow-2xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-xl">
+              <FiHelpCircle className="w-8 h-8 text-white" />
+            </div>
+          </div>
+          <h2 class="text-3xl font-bold text-white mb-4 font-playfair">Still Have Questions?</h2>
+          <p class="text-slate-200 text-lg mb-8 max-w-2xl mx-auto">
+            Can't find what you're looking for? Contact us directly and we'll respond within 24-48 hours.
+          </p>
+          <a
+            href="/contact"
+            class="group inline-flex items-center justify-center bg-blue-600 text-white px-10 py-4 rounded-xl hover:bg-blue-700 transition-all font-semibold text-lg shadow-xl hover:scale-105"
+          >
+            Contact Us
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>
