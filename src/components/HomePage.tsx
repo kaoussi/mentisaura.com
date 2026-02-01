@@ -136,7 +136,7 @@ const HomePage = () => {
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                       <div>
                         <p className="font-semibold text-gray-900">Paperback</p>
-                        <p className="text-sm text-gray-600">5" × 8" • Perfect bound • Matte finish</p>
+                        <p className="text-sm text-gray-600">5" × 8" • 110 pages • Matte finish</p>
                       </div>
                     </div>
                     <p className="font-bold text-gray-900">$19.99</p>
@@ -147,10 +147,10 @@ const HomePage = () => {
                       <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                       <div>
                         <p className="font-semibold text-gray-900">Ebook (PDF)</p>
-                        <p className="text-sm text-gray-600">Instant download • All devices</p>
+                        <p className="text-sm text-gray-600">110 pages • Instant download</p>
                       </div>
                     </div>
-                    <p className="font-bold text-blue-600">$9.99</p>
+                    <p className="font-bold text-blue-600">$12.99</p>
                   </div>
 
                   <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
@@ -158,10 +158,10 @@ const HomePage = () => {
                       <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
                       <div>
                         <p className="font-semibold text-gray-900">Hardcover</p>
-                        <p className="text-sm text-gray-600">5.5" × 8.5" • Dust jacket • Premium</p>
+                        <p className="text-sm text-gray-600">5.5" × 8.5" • 102 pages • Premium</p>
                       </div>
                     </div>
-                    <p className="font-bold text-gray-900">$33.00</p>
+                    <p className="font-bold text-gray-900">$33.99</p>
                   </div>
                 </div>
               </div>
