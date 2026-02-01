@@ -10,16 +10,12 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                <span className="text-white font-bold text-xl font-playfair">M</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-900 font-playfair group-hover:text-blue-600 transition-colors">
-                  Mentis Aura
-                </span>
-                <span className="text-xs text-gray-500 italic">The Breeze of Mind</span>
-              </div>
+            <a href="/" className="flex items-center group">
+              <img
+                src="/default.png"
+                alt="Mentis Aura"
+                className="h-12 w-auto group-hover:scale-105 transition-transform duration-200"
+              />
             </a>
           </div>
 

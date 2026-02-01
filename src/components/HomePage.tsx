@@ -22,7 +22,7 @@ const HomePage = () => {
             Mentis Aura
           </h1>
           <p className="text-3xl md:text-4xl text-slate-300 mb-4 font-light">
-            The Breeze of Mind
+            We publish ideas, not just words.
           </p>
           <p className="text-xl text-slate-400 italic max-w-2xl mx-auto mb-8">
             Where thought moves freely. Ideas unobstructed by algorithms or committees.

@@ -10,12 +10,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-playfair">Mentis Aura</h3>
+            <a href="/" className="inline-block mb-4">
+              <img
+                src="/white.png"
+                alt="Mentis Aura"
+                className="h-10 w-auto"
+              />
+            </a>
             <p className="text-gray-300 text-sm mb-4">
-              The breeze of mind. Philosophy without compromise.
+              We publish ideas, not just words.
             </p>
             <p className="text-gray-400 text-xs italic">
-              "Where thought moves freely."
+              Where thought moves freely.
             </p>
           </div>
 

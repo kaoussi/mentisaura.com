@@ -179,50 +179,106 @@ import '../styles/globals.css';
       </div>
     </section>
 
+    <!-- Book Details -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 bg-white border-b border-gray-200">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-blue-50 to-slate-50 p-8 rounded-2xl border border-blue-200">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Language</h3>
+          <p class="text-gray-700">
+            Originally written in Arabic, translated to English by the author. Three sections were written directly in English: "Know Thyself," "Transcendence and Manifestation," and the poem in "Existence is Contradicted."
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Complete Chapter List -->
     <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4 font-playfair">Complete Chapter List</h2>
+          <h2 class="text-4xl font-bold text-gray-900 mb-4 font-playfair">Table of Contents</h2>
           <p class="text-gray-600">24 philosophical essays examining the contradictions of existence</p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {[
-            "You Are Selfish",
-            "You Are What You Do",
-            "You Are What You Love",
-            "You Want to Be Loved",
-            "We Fear Death",
-            "We Are Self-Destructive",
-            "Sexual Instinct Directs Our Actions",
-            "The Interdependence of Men and Women",
-            "The Unity of Existence",
-            "Existence is Contradicted",
-            "You Are Not the Center of the Universe",
-            "Free Will is Predestined",
-            "We Need a Belief System",
-            "Society Has a Massive Impact on You",
-            "Religious and Scientific Ideologies",
-            "The State Doesn't Exist",
-            "Heaven and Hell are Mental States",
-            "We Are All Capable of Good and Evil",
-            "The Need for Deep Sense of Belonging",
-            "Who You Are",
-            "Your Consciousness",
-            "You Can't Always Get What You Want",
-            "Courage, Love, and Humility: Pillars of Power",
-            "Everything Happens at the Right Time"
-          ].map((chapter, index) => (
-            <div class="group bg-white hover:bg-slate-50 p-4 rounded-xl shadow-sm border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-200">
-              <div class="flex items-start gap-3">
-                <span class="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-lg flex items-center justify-center text-sm font-bold">
-                  {index + 1}
-                </span>
-                <p class="text-gray-800 font-medium text-sm leading-snug pt-1 group-hover:text-blue-700 transition-colors">{chapter}</p>
+        <!-- Part One -->
+        <div class="mb-10">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 font-playfair border-b-2 border-blue-500 pb-2">PART ONE: THE NATURE OF SELF</h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              "You Are Selfish",
+              "You Are What You Do",
+              "You Are What You Love",
+              "We Want to Be Loved by Others",
+              "We Fear Death",
+              "We Are Self-Destructive",
+              "We Are the First Domesticated Animal",
+              "Sexual Instinct Directs Our Actions"
+            ].map((chapter, index) => (
+              <div class="group bg-white hover:bg-slate-50 p-4 rounded-xl shadow-sm border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-200">
+                <div class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-lg flex items-center justify-center text-sm font-bold">
+                    {index + 1}
+                  </span>
+                  <p class="text-gray-800 font-medium text-sm leading-snug pt-1 group-hover:text-blue-700 transition-colors">{chapter}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        <!-- Part Two -->
+        <div class="mb-10">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 font-playfair border-b-2 border-purple-500 pb-2">PART TWO: THE CONTRADICTED REALITY</h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              "You Are Not the Center of the Universe",
+              "The Unity of Existence",
+              "Existence is Contradicted",
+              "Free Will is Predestined",
+              "We Need a Belief System",
+              "Society's Massive Impact On Us",
+              "Ideologies and Independent Thinking",
+              "The Abstract Concept of the State"
+            ].map((chapter, index) => (
+              <div class="group bg-white hover:bg-slate-50 p-4 rounded-xl shadow-sm border border-slate-200 hover:border-purple-300 hover:shadow-md transition-all duration-200">
+                <div class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-lg flex items-center justify-center text-sm font-bold">
+                    {index + 9}
+                  </span>
+                  <p class="text-gray-800 font-medium text-sm leading-snug pt-1 group-hover:text-purple-700 transition-colors">{chapter}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Part Three -->
+        <div class="mb-10">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 font-playfair border-b-2 border-amber-500 pb-2">PART THREE: TRANSCENDENCE</h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              "You Are Not Who You Think You Are",
+              "We Are All Capable of Doing Good and Evil",
+              "Heaven and Hell are Mental States",
+              "The Need for a Deep Sense of Belonging",
+              "Consciousness and Awareness",
+              "You Can't Always Get What You Want",
+              "Courage, Love, and Humility are the Pillars of Power",
+              "Everything Happens at the Right Time"
+            ].map((chapter, index) => (
+              <div class="group bg-white hover:bg-slate-50 p-4 rounded-xl shadow-sm border border-slate-200 hover:border-amber-300 hover:shadow-md transition-all duration-200">
+                <div class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-amber-500 to-amber-600 text-white rounded-lg flex items-center justify-center text-sm font-bold">
+                    {index + 17}
+                  </span>
+                  <p class="text-gray-800 font-medium text-sm leading-snug pt-1 group-hover:text-amber-700 transition-colors">{chapter}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="text-center mt-8">
+          <p class="text-gray-600 italic">Plus: Introduction and Afterword (including original poetry)</p>
         </div>
       </div>
     </section>
