@@ -29,9 +29,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <span className="text-gray-500 cursor-not-allowed" title="Coming soon">
-                  Sample Chapter (Coming Soon)
-                </span>
+                <a href="/samples" className="text-gray-300 hover:text-white transition-colors">
+                  Sample Chapters
+                </a>
               </li>
               <li>
                 <a href="/bulk-orders" className="text-gray-300 hover:text-white transition-colors">

@@ -1,0 +1,355 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import '../styles/globals.css';
+import { FiBookOpen, FiChevronDown } from 'react-icons/fi';
+---
+
+<Layout
+  title="Sample Chapters - The Contradicted Existence"
+  description="Read sample chapters from The Contradicted Existence. Experience the book's unflinching examination of human nature and existence before you buy."
+>
+  <Navigation client:load />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-800 to-slate-900 text-white py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl mb-8 shadow-xl">
+          <FiBookOpen className="w-10 h-10 text-white" />
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 font-playfair">Sample Chapters</h1>
+        <p class="text-xl md:text-2xl text-slate-200 mb-4">Experience <em>The Contradicted Existence</em> before you buy.</p>
+        <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+          These sample chapters offer a window into the book's unflinching examination of human nature and existence.
+        </p>
+        <div class="mt-8 inline-flex items-center gap-2 bg-red-900/30 px-6 py-3 rounded-full border border-red-400/30">
+          <span class="text-sm text-red-200 font-semibold">Warning: This book does not comfort. It confronts.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter Navigation -->
+    <section class="bg-white border-b border-gray-200 sticky top-20 z-40">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#introduction" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg font-medium hover:bg-blue-100 transition-colors">
+            Introduction
+          </a>
+          <a href="#chapter-1" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg font-medium hover:bg-blue-100 transition-colors">
+            Chapter 1: You Are Selfish
+          </a>
+          <a href="#chapter-11" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg font-medium hover:bg-blue-100 transition-colors">
+            Chapter 11: Existence is Contradicted
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample Chapters Content -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-3xl mx-auto">
+
+        <!-- Introduction -->
+        <article id="introduction" class="mb-20 scroll-mt-32">
+          <div class="border-l-4 border-blue-500 pl-6 mb-8">
+            <h2 class="text-4xl font-bold text-gray-900 font-playfair">Introduction</h2>
+          </div>
+
+          <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+            <p>
+              This book is a mere attempt to understand my existence and existence itself, an attempt that could be right or wrong on all scales.
+            </p>
+            <p>
+              I am not trying to convince you or change your beliefs. I am not endorsing hate speech or encouraging violence; that is not my goal and never was and never will be. All I want from you, the reader, is an open mind—a willingness to consider a new perspective and new ways of approaching life and how we see ourselves. This work is built on the fertile ground of thought and consciousness, and on all the thinkers who existed before me.
+            </p>
+            <p>
+              I wrote this book in Arabic and did the translation and editing myself to ensure the meaning was not changed.
+            </p>
+            <p class="text-xl font-semibold text-gray-900">
+              Thank you, and I love you.
+            </p>
+
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 mt-10">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 font-playfair">Question marks</h3>
+              <div class="space-y-4 text-gray-700 italic">
+                <p>
+                  Where have our moments of joy and sorrow gone, vanished into history's endless scroll? What lies waiting for us, hidden in the folds of time? Where is this life, so full of surprises, taking us? Where did the fish we eat once swim in the ocean? Which field bore the grains that became our bread? From which river did we drink to quench our thirst? Who plucked the grapes that now fill our cup with wine?
+                </p>
+                <p>
+                  What do we do with this fleeting moment in our hands, the only thing that truly belongs to us? Do we waste it, breathe life into it? Or simply stand by, watching it slip away through our fingers like sand? What am I chasing with my ambition, which made me forsake another dream, another life that could have been mine in a parallel reality? What hidden force drives us to seek happiness and flee from pain?
+                </p>
+                <p>
+                  In every moment, I dissolve like a chemical reaction, creating another self, another story, another reaction. Each day, I carve my grave and prepare my rest, surrendering to the silence of night. Yet at dawn comes defiance with a spirit rising from the ashes, seizing a new day, a new chance. I come from nothingness, and to nothingness I shall return. Between these voids, I simply am.
+                </p>
+                <p class="text-xl font-semibold text-gray-900 not-italic">
+                  Who am I? One is not confined to a name, nor bound by lineage, nor reduced to mere humanity. What matters in the grand scheme of "I" is that I exist. And all that exists is contained by existence itself. Therefore, I am EXISTENCE.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="border-t border-gray-200 my-16"></div>
+
+        <!-- Chapter 1 -->
+        <article id="chapter-1" class="mb-20 scroll-mt-32">
+          <div class="border-l-4 border-blue-500 pl-6 mb-8">
+            <span class="text-sm font-semibold text-blue-600 uppercase tracking-wide">Chapter 1</span>
+            <h2 class="text-4xl font-bold text-gray-900 font-playfair mt-2">You Are Selfish</h2>
+          </div>
+
+          <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+            <p>
+              Wherever one examines nature's components, one sees selfishness embodied through them, indicating that the whole is pure selfishness. What does existence seek? Any word other than existence itself would be wrong; the purpose of existence is existence itself.
+            </p>
+            <p>
+              The implication is that existence is selfish, which means it is an end in itself.
+            </p>
+            <p>
+              Consequently, all parts of existence are an end in themselves and a means for existence to achieve its purpose.
+            </p>
+            <p>
+              This means that we, as parts and as humanity, are selfish. Since the dawn of consciousness, humanity has been achieving selfish accomplishments and goals until we reached the highest stages of the food chain. The lions and tigers we once feared have become circus cats and trophies hanging on our walls. Through our selfishness, we have caused the extinction of species and the domestication of others. Our selfishness allows us to build farms and pastures for sheep, cattle, and chickens to be cooked and served on our tables. We feed them, fatten them, and protect them against diseases until they reach the slaughterhouse, where they offer themselves as sacrifices to us; the same applies to plants.
+            </p>
+            <p>
+              Thus, rendering themselves palatable food for us became their selfish means of conquering the world to reach populations they could not have achieved without our aid.
+            </p>
+            <p>
+              This leads us to the truth that every interaction one part has with another inevitably fulfills each part's selfishness through the other.
+            </p>
+            <p>
+              We as parts are selfish in ourselves; by the concept of opposition, we stand in a position of selfishness toward the other. Everything exchanged between us is our selfishness: in the language of physicists, our time and energy; in the language of priests, our virtues and vices.
+            </p>
+            <p>
+              This brings us to humans as a link in the chain of parts amid a natural selfish struggle for existence to realize itself. The individual comes to say that he is not selfish and we should not be selfish. This claim, if it indicates anything at all, reveals pathological signs of a weak self and a decayed set of societal values: an attempt by some individuals to absolve themselves of their selfish nature so they can tolerate their natural reality and continue existing. In doing so, they grant themselves the right to absolve and soothe themselves from the pain and suffering imposed by the truth of their inherent selfishness.
+            </p>
+            <p>
+              I see you, weak creatures, shrouded in the illusions of your minds in an attempt to impose your weakness on all who are stronger than you. Your fate is to perish sooner or later, for everyone in whom the will of nature has weakened, nature devours; they perish due to the deadly poison within them, for every repressed and unfree selfishness makes its owner sick with an incurable disease that eats them from within.
+            </p>
+            <p>
+              The claim of altruism is a pathological condition indicating a weak self that cannot keep pace with reality and accept its existential truth. It is like the recoil movement of the sacrificial animal's legs after slaughter, and humanity must take caution from this type, for the will of weakness has taken hold of them and it is too late to save what can be saved. They are like a gangrenous toe that must be amputated before the infection spreads throughout the body.
+            </p>
+            <p class="text-xl font-semibold text-gray-900 border-l-4 border-blue-500 pl-4">
+              Accepting the truth of our selfishness is an existential necessity: I am selfish, therefore I exist. This statement is more authentic than Descartes' cogito. Without my selfishness, I would be nothing; it is Dawkins' idea of the selfish gene.
+            </p>
+            <p>
+              The common mistake made by those who attempt to transcend their selfishness is believing that they are something outside of nature and thus denying the truth of their natural selfishness. With their condescending view of their mother and incubator, they have exposed themselves to weakness. Their view of themselves as unselfish does not negate the truth of their selfishness but transforms it into pathological selfishness. Natural selfishness is when one realizes the truth of one's selfishness and that one is both an end and a means for existence's selfishness.
+            </p>
+            <p>
+              The presence of the other in our lives is necessary to create balance in the individual so that one can withstand the continuous blows directed at us by existence. However, the other is sometimes the blow that existence has directed at us, like a curved ball heading to crush us.
+            </p>
+            <p>
+              On this consideration, one must discover the other carefully and delve into their depths more than all those close to us, because this other often gives us a better understanding of human nature, its motives, and its operating mechanism. The lesson this other teaches us will accompany us throughout life and remain tattooed on our souls.
+            </p>
+            <p>
+              The ego, during its interaction with the other, likes to be the center of the other's existence, as if the other exists to satisfy its desires and glorify its selfishness. The ego likes to exploit the other and hates to be exploited by them: a sadistic relationship in which the ego sees the other as a tool harnessed for it in the struggle of life. In the ego's self-absorption and preoccupation with its own importance, it crushes the other's ego without paying any attention to its importance as well, forming in the other, or rather in the other's ego, a feeling of contempt, resentment, and hatred due to the lack of attention paid to it and the failure to satisfy each other's vanity. All this will inevitably lead to the explosion of the other's ego in our faces, thus shattering our sense of self.
+            </p>
+            <p>
+              Here, one must never forget the truth of human selfishness. My selfishness is always met with the selfishness of the other, and we must never, under any excuse, give greater importance to our selfishness at the expense of the other's selfishness. Otherwise, such a relationship would constitute a master-slave relationship. The master always seeks to magnify his ego through his slave without the slave ever showing his ego and selfishness in the orbit of the relationship between him and his master; otherwise, he would be flogged.
+            </p>
+            <p>
+              One becomes master of oneself by refusing to obey the ego's demands and by assuming the observer role to understand one's ego. One should also seek what the other's ego and selfishness desires and care about it. Then one will not only be master to oneself but also master to all, if one does so with an understanding of how the ego operates: that part of us that ordinary people are deceived into thinking is their true self. The truth is they have been deceived by the image represented in their minds about themselves; that image exists only in their imagination. One's self is much greater than one's ego, name, family, position, ambitions, and relationships with others.
+            </p>
+            <p>
+              The way to self-realization and knowledge remains in understanding and accepting the ego, which blinds our eyes and makes us fenced in, closed, and concerned with ourselves or the image we believe is our self.
+            </p>
+            <p>
+              There is a fundamental difference between natural selfishness and pathological selfishness.
+            </p>
+            <p>
+              The first is where one is aware of one's selfish nature, neither denying nor rejecting it, aware of its inherent dangers, avoiding its evil as much as possible and sometimes using it to one's advantage.
+            </p>
+            <p>
+              The second differs significantly in all its components from the first, as all its contents have been inverted to transform into a monster walking on two legs in an arrogant, narcissistic human form. This personality hates every selfish person and opposes every selfish idea that calls for accepting individuality. Instead, it calls for accepting the unselfish doctrine, where the human animal seeks to disavow its natural skin to wrap itself in a transcendent, sublime blanket above its nature.
+            </p>
+            <p>
+              However, the deniers of their original nature will never be able to know themselves and see selfishness in their altruistic actions; in their view, their actions are not selfish, and others are the selfish ones who do not live up to their standards. Thus, they become prisoners of their illusions.
+            </p>
+            <p>
+              Still, if someone points to their repressed self within them due to their arrogance and lack of awareness of their essence, they flog themselves more and more and bury it in their subconscious with the sands of oblivion, increasing their desire to impose their sick ideas on others, for no reason other than that they did not accept the reality of their selfishness.
+            </p>
+            <p>
+              The first stage of healing begins when someone strips away the masked nature of our patients to confront them with reality. One must even dare to strike a blow to that patient's narcissism to remove the illusory robe that protects them from the frost of their existence.
+            </p>
+            <p>
+              This escapism is nothing but a result of fear of the glowing beam within them. It is the one fleeing from oneself that screams in the depths of one's soul, where one hears only the echoes of ghost voices, which instills terror in our patient's heart.
+            </p>
+            <p>
+              They are like someone who attended a masquerade party wearing a horse mask and when they looked in the mirror, they convinced themselves they were a horse, and their natural selfishness became a prisoner of the mask. The mask dictates their behaviors and thoughts and they interact based on what is dictated to them by the mask.
+            </p>
+            <p>
+              Natural selfishness is one of the characteristics of powerful humans. They accept their selfishness to the extent that they accept the absurdity and contradictions of their existence.
+            </p>
+            <p>
+              Here, the human is aware of one's essence and acts on one's selfish nature without denying it so that one can face life and its inherent suffering without psychological diseases.
+            </p>
+          </div>
+        </article>
+
+        <div class="border-t border-gray-200 my-16"></div>
+
+        <!-- Chapter 11 -->
+        <article id="chapter-11" class="mb-20 scroll-mt-32">
+          <div class="border-l-4 border-blue-500 pl-6 mb-8">
+            <span class="text-sm font-semibold text-blue-600 uppercase tracking-wide">Chapter 11</span>
+            <h2 class="text-4xl font-bold text-gray-900 font-playfair mt-2">Existence is Contradicted</h2>
+          </div>
+
+          <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+            <p>
+              We wake up, have breakfast, go to work, have lunch, return from work, and sit in cafes and bars. Everyone is bound to their phone, browsing social media. We watch football games, have dinner, lie in bed, sleep, and wake up again. And so, the days go on.
+            </p>
+            <p>
+              We laugh, grieve, listen to others' stories, tell our own stories, call our mothers, and our siblings call us. We go for a drive with a friend or take a short walk. We head to the beach on hot days and to snowy areas in winter.
+            </p>
+            <p>
+              We grow up, get married, have children, get divorced. Children grow up half-matured; the child feels lonely, depressed, and euphoric. We feel lonely even amidst family and society.
+            </p>
+            <p>
+              We make laws, then break them, and go to prison for breaking the law to become rehabilitated citizens. Prison makes us more criminal. Those who imprison us are the same ones who break the law.
+            </p>
+            <p>
+              We build mosques, churches, and temples. We get closer to God and pray for Him to fulfill our wishes.
+            </p>
+            <p>
+              We are happy, and then illness comes to feed on that happiness. We manufacture weapons, and we fabricate wars to sell those weapons. People die, and men fight each other without knowing the real reason why they are fighting. Meanwhile, the sun rises and sets, the moon waxes and wanes, stars stud the sky, rain falls and turns into floods, and people drown.
+            </p>
+            <p>
+              We raise pets and treat them better than we treat each other. An earthquake, followed by a tsunami, a volcano erupts, fires break out, drought strikes, and livestock and animals perish.
+            </p>
+            <p>
+              A man in the open air wraps himself in the sky, not having enough clothes to protect him from the cold. Another man in his luxurious home walks around in his silk clothing, heads to the kitchen, feeds his dog a piece of meat, takes a bottle of the finest whiskey, and pours a glass as Bach's music plays.
+            </p>
+            <p>
+              A faithful woman is cheated on by her husband, who does not love her. A loyal husband returns home early from work to find his wife in his bed with another man. He takes the gun, shoots them, and goes to the children's room. Two gunshots are heard, and after a short moment, the last bullet is fired.
+            </p>
+            <p>
+              A broken man enters the grocery store, buys a rope, goes to a nearby forest, then hangs himself.
+            </p>
+            <p>
+              Music is composed, novels and poems are written, films are made, paintings are drawn, and we dance and sing.
+            </p>
+            <p>
+              We elect presidents, pledge allegiance to kings, coups occur, people are oppressed, and activists are arrested. A man is crushed in a garbage truck. A man drives a bus and heads toward the sidewalk to run over people like a game. A teenager carries a machine gun, heads to his school, and starts shooting. News is broadcast on radio and television. Everyone watches and listens. Days pass, and everything is forgotten in the depths of history.
+            </p>
+            <p>
+              We divide the earth into sections and call them borders; wars arise because of these imaginary borders. We own land, we die, that land is inherited, and conflict arises over inheritance. We created money and kept chasing after it. We created states and let them rule us, restrict our freedom, and imprison us.
+            </p>
+            <p>
+              And within all these contradictions and absurd irrational events that we have been forced to coexist with, two pivotal questions must occur in one's mind at least once in one's life.
+            </p>
+            <p>
+              The first is why? Why all this? What is the purpose behind everything that happens? Is there a purpose in the first place? Or are we condemned to coexist with this reality without knowing the answer to such a question? Are we unable to answer it?
+            </p>
+            <p>
+              The second is, is this the best we can do? Yes, at this moment, this is the best we can do because it is reality: this is us. But are we not capable of doing more than we have achieved? Our intelligence and scientific and technological progress all go to waste if we do not employ them for the benefit of every individual; instead, they are evidence of our poverty and stupidity.
+            </p>
+            <p>
+              If existence is without meaning, the only meaning left for it is meaninglessness. Therefore, we must establish the meaning that suits us as individuals and then as humanity in a way that serves the interests of all individuals.
+            </p>
+            <p>
+              Our consciousness of existence is formed through the data that enters our brain from our environment and surroundings. The child, while creating their consciousness, is given a meaning for their existence and existence in general by their family and society and what humanity has produced since its dawn up to the present time; a meaning tailored according to the size of their culture, and most people are accompanied by that meaning from youth to the grave, and religious ideologies have long been fertile ground for building that meaning and giving value to our existence.
+            </p>
+            <p>
+              The evolution of the human mind cannot discover a meaning for existence or grasp the naked truth: the truth of why existence exists. This is what no human mind can find. We are left only to give meaning to our existence with the fact that the meaning we color our existence with is contrast; we imagine the existence of a shiny color, and the truth of the matter is that two colors give meaning to our existence: white and black, good and evil, death and life.
+            </p>
+            <p>
+              This truth brings down every symbol and every God and shatters all other truths. It strips kings of their euphoria with thrones, and all human values that humanists trumpet become of no significant value, nothing, without meaning.
+            </p>
+            <p class="text-xl font-semibold text-gray-900 border-l-4 border-blue-500 pl-4">
+              If not for the genius rebel Camus, the whole world would have become a pool of blood filled with corpses and vultures hovering over them. Taking his wisdom, one must rebel against this absurd truth and draw the boundaries of the meaning with which one will live by in this world.
+            </p>
+            <p class="text-xl font-semibold text-gray-900">
+              Love and art remain the best antidote to treat the malignant poison of nihilism.
+            </p>
+
+            <!-- Poem Section -->
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 text-white p-10 rounded-2xl mt-10">
+              <h3 class="text-2xl font-bold mb-6 font-playfair text-center">For You:</h3>
+              <div class="space-y-6 text-slate-200 leading-relaxed">
+                <p>
+                  I am life in a child chasing butterflies in a green field,<br/>
+                  wrinkles on the face of an old man worn out by time,<br/>
+                  in two lovers kissing each other tenderly and passionately<br/>
+                  or a married couple quarreling and exchanging insults.
+                </p>
+                <p>
+                  I am life embodied in a man who gives all he has<br/>
+                  to help the poor and needy<br/>
+                  Or a rich man who looks at the poor with disdain.
+                </p>
+                <p>
+                  I live within the tunes of music,<br/>
+                  in paintings,<br/>
+                  lines of poetry,<br/>
+                  and within a Russian novel.
+                </p>
+                <p>
+                  I am life wherever life is found, and I exist where death exists.
+                </p>
+                <p>
+                  What is life other than a lion killing other lions' cubs,<br/>
+                  hyenas tearing the flesh of their prey alive,<br/>
+                  a snake lurking to pounce on its victim?<br/>
+                  A pedophile, a serial killer, a parricide, and a suicide.
+                </p>
+                <p>
+                  I live in the heart of a father who tirelessly supports his family,<br/>
+                  Or a drunk father who returns home<br/>
+                  to shower his family with beatings and insults.<br/>
+                  an affectionate mother who lavishes love on her children,<br/>
+                  a mother who killed her newborn,<br/>
+                  a madman roaming the streets barefoot,<br/>
+                  a child born with a birth defect or born sane<br/>
+                  then had his feet amputated or became blind,<br/>
+                  a homeless woman raped by rabble in a dark alley,<br/>
+                  a beautiful face that captivates hearts,<br/>
+                  or an ugly face full of pimples that invite repulsion.
+                </p>
+                <p>
+                  I am life in the breeze that fans the burning fires.<br/>
+                  I am the wood and the fire and the rain.<br/>
+                  I am a part in the whole, One and only, unique.<br/>
+                  I am the guillotine and the judge and the criminal<br/>
+                  and the severed head;<br/>
+                  I am the shackled hand.
+                </p>
+                <p>
+                  I am anger, joy, misery, happiness, ecstasy, depression.<br/>
+                  I am existence, I exist for the purpose of existing.<br/>
+                  I am constantly moving and changing.<br/>
+                  For life to exist, there must be everlasting and change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Call to Action -->
+        <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-12 rounded-3xl text-center shadow-2xl">
+          <h2 class="text-3xl font-bold text-white mb-4 font-playfair">Ready to confront the full truth?</h2>
+          <p class="text-slate-200 text-lg mb-8 max-w-2xl mx-auto">
+            These sample chapters offer only a glimpse into <em>The Contradicted Existence</em>. The complete book provides a comprehensive framework for understanding human nature, power, and authentic living.
+          </p>
+          <a
+            href="/book"
+            class="group inline-flex items-center justify-center bg-blue-600 text-white px-10 py-4 rounded-xl hover:bg-blue-700 transition-all font-semibold text-lg shadow-xl hover:scale-105"
+          >
+            Buy the Complete Book
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>

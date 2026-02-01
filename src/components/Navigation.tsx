@@ -37,12 +37,12 @@ const Navigation = () => {
             >
               About
             </a>
-            <span
-              className="px-4 py-2 text-gray-400 cursor-not-allowed rounded-lg font-medium"
-              title="Coming soon - pending author approval"
+            <a
+              href="/samples"
+              className="px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all font-medium"
             >
-              Sample Chapter
-            </span>
+              Sample Chapters
+            </a>
             <a
               href="/contact"
               className="px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all font-medium"
@@ -86,9 +86,13 @@ const Navigation = () => {
             >
               About
             </a>
-            <span className="block px-4 py-3 text-gray-400 cursor-not-allowed rounded-lg font-medium">
-              Sample Chapter (Soon)
-            </span>
+            <a
+              href="/samples"
+              className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-all font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Sample Chapters
+            </a>
             <a
               href="/contact"
               className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-all font-medium"

@@ -177,13 +177,12 @@ const HomePage = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </a>
-                <button
-                  disabled
-                  className="flex-1 inline-flex items-center justify-center px-6 py-4 border-2 border-gray-300 text-gray-400 rounded-xl font-semibold cursor-not-allowed"
-                  title="Coming soon - pending author approval"
+                <a
+                  href="/samples"
+                  className="flex-1 inline-flex items-center justify-center px-6 py-4 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:border-blue-400 hover:text-blue-600 hover:bg-blue-50 transition-all"
                 >
-                  Sample Chapter (Soon)
-                </button>
+                  Read Sample Chapters
+                </a>
               </div>
 
               {/* Trust indicator */}
